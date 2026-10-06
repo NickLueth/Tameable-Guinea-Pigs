@@ -41,7 +41,7 @@ public class GuineaPigEntity extends TameableEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     public final AnimationState sittingAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
-    private int ambientSoundCooldown = this.random.nextBetween(200, 350);
+    private int ambientSoundCooldown = this.random.nextBetween(1000, 1800);
     private static final Ingredient FAVORITE_FOODS = Ingredient.ofItems(
             Items.DANDELION,
             Items.WHEAT,
@@ -129,7 +129,7 @@ public class GuineaPigEntity extends TameableEntity {
             // Chutting ambient sound (periodic)
             if (--ambientSoundCooldown <= 0 && this.isAlive()) {
                 this.playSound(this.getAmbientSound(), this.getSoundVolume(), this.getSoundPitch());
-                ambientSoundCooldown = this.random.nextBetween(200, 350);
+                ambientSoundCooldown = this.random.nextBetween(1000, 1800);
             }
         }
     }
@@ -258,6 +258,11 @@ public class GuineaPigEntity extends TameableEntity {
     @Override
     protected SoundEvent getAmbientSound() {
         return ModSounds.CHUTTING;
+    }
+
+    @Override
+    public int getMinAmbientSoundDelay() {
+        return 1000;
     }
 
     @Nullable
