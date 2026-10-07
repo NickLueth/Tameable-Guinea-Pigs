@@ -1,74 +1,62 @@
-# Tameable Guinea Pigs (1.1.2) - Fabric Edition (1.21.1)
+# Tameable Guinea Pigs
+**Mod Version:** 1.2.0
 
-Welcome to the **Tameable Guinea Pigs** mod, a continuation and reimagining of the original **Guinea Pig Variety** mod — now updated for **Minecraft 1.21.1** and running on the **Fabric** mod loader!
+A Fabric mod that adds tameable guinea pigs to Minecraft.
 
-Bring adorable, curious guinea pigs into your Minecraft world.
+Tame, feed, breed, and take care of your guinea pigs. They can be found naturally in forest biomes and make for a fun little companion to have around.
 
----
+## Features
 
-## 🆕 What's New
+- Guinea pigs spawn naturally in all forest biomes.
+- Tame wild guinea pigs using their favorite foods.
+- Heal tamed guinea pigs with their favorite foods.
+- Make guinea pigs sit and follow you.
+- Breed guinea pigs using dandelions.
+- Guinea pigs drop droppings that can be used like bone meal.
+- Custom sounds and animations.
 
-- 🔄 **Updated from Minecraft 1.20.1 (Forge) → Minecraft 1.21.1 (Fabric 0.16.14)**
-- 🎞️ New animations
-- 🛠️ Improved compatibility with modern Fabric-based modpacks
+### Favorite Foods
 
----
+Guinea pigs can be tamed and healed with:
 
-## 🧠 How the Mod Works
+- Wheat
+- Apples
+- Carrots
+- Melon Slices
+- Sweet Berries
+- Golden Carrots
+- Golden Apples
+- Enchanted Golden Apples
+- Glistering Melon Slices
 
-Here’s what to expect when you encounter guinea pigs in your world:
+## About the Original Mod
 
-- 🌲 **Natural Spawns:** Guinea pigs spawn naturally in all **forest biomes**.
-- 💩 **Droppings:** They leave behind **droppings** that function just like **bone meal** — use them to fertilize plants!
-- 🌾 **Taming & Healing:** Use any of their **favorite foods** to **tame** a wild guinea pig or **heal** a wounded one.
-  - Wheat
-  - Apples
-  - Carrots
-  - Melon Slices
-  - Sweet Berries
-  - Golden Carrots
-  - Golden Apples
-  - Enchanted Golden Apples
-  - Glistering Melon Slices
-- 🌼 **Breeding:** Feed two guinea pigs a **dandelion** each to **breed** them.
-- 🪑 **Sitting Behavior:** Right-click a **tamed** guinea pig to toggle **sit** mode.
+This mod is based on the original [Guinea Pig Variety](https://www.curseforge.com/minecraft/mc-mods/guinea-pig-variety) mod by **Fuths**.
 
----
+The original mod's concept and artwork are credited to Fuths. This project is a continuation built from that foundation.
 
-## 🐹 About the Original Mod
+## Installation
 
-**Guinea Pigs Mod** is based on the original **[Guinea Pig Variety](https://www.curseforge.com/minecraft/mc-mods/guinea-pig-variety)** by **Fuths**.
+1. Install [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://modrinth.com/mod/fabric-api).
+2. Download the latest version of Tameable Guinea Pigs.
+3. Put the `.jar` file in your Minecraft `mods` folder.
+4. Launch Minecraft.
 
-> 🎨 All credit for original artwork and mod concept goes to **Fuths**.  
-> This continuation exists thanks to their creative foundation.
+## Requirements
 
----
+- Minecraft
+- Fabric Loader
+- Fabric API
 
-## 🚀 Installation
+The supported Minecraft versions depend on the release.
 
-1. Install the latest [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://modrinth.com/mod/fabric-api).
-2. Download the latest release of **Guinea Pigs Mod**.
-3. Drop the `.jar` file into your Minecraft `mods` folder.
-4. Launch Minecraft and enjoy your new guinea pig companions!
+## Feedback & Contributions
 
----
+Found a bug or have an idea for the mod?
 
-## 🧱 Requirements
+Open an [issue](https://github.com/NickLueth/Tameable-Guinea-Pigs/issues) on GitHub.
 
-- **Minecraft 1.21.1**
-- **Fabric Loader**
-- **Fabric API**
+## Credits
 
----
-
-## 💬 Feedback & Contributions
-
-Got ideas? Found a bug?
-Open an [issue](https://github.com/NickLueth/guinea-pigs-1.21.1/issues) or reach out — your input is always welcome!
-
----
-
-## 🙌 Credits
-
+- **Current Developer:** [Nick Lueth](https://github.com/NickLueth)
 - **Original Creator:** [Fuths](https://www.curseforge.com/members/fuths)
-- **Fabric Port & Enhancements:** [Nick Lueth](https://github.com/NickLueth)
