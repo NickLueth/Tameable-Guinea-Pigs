@@ -64,6 +64,17 @@ jar {
 	}
 }
 
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"guinea_pigs" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
 // configure the maven publication
 publishing {
 	publications {

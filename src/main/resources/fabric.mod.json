@@ -26,12 +26,9 @@
 			"net.nitwit.guinea_pigs.GuineaPigsClient"
 		]
 	},
-	"mixins": [
-      "guinea_pigs.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.1",
+		"minecraft": "~26.3",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

@@ -1,19 +1,26 @@
 package net.nitwit.guinea_pigs.entity;
 
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnGroup;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobCategory;
 import net.nitwit.guinea_pigs.GuineaPigs;
 import net.nitwit.guinea_pigs.entity.custom.GuineaPigEntity;
 
 public class ModEntities {
+
     // Registers the custom Guinea Pig entity type with a spawn group of 'CREATURE' and specific dimensions
-    public static final EntityType<GuineaPigEntity> GUINEA_PIG = Registry.register(Registries.ENTITY_TYPE,
-            Identifier.of(GuineaPigs.MOD_ID, "guinea_pig"),
-            EntityType.Builder.create(GuineaPigEntity::new, SpawnGroup.CREATURE)
-                    .dimensions(.6f, .4f).build());
+    public static final EntityType<GuineaPigEntity> GUINEA_PIG = Registry.register(
+            BuiltInRegistries.ENTITY_TYPE,
+            Identifier.fromNamespaceAndPath(GuineaPigs.MOD_ID, "guinea_pig"),
+            EntityType.Builder.of(GuineaPigEntity::new, MobCategory.CREATURE).sized(.6f, .4f)
+                    .build(ResourceKey.create(
+                            Registries.ENTITY_TYPE,
+                            Identifier.fromNamespaceAndPath(GuineaPigs.MOD_ID, "guinea_pig")
+                    )));
 
     // Logs a message to indicate mod entity registration
     public static void registerModEntities() {

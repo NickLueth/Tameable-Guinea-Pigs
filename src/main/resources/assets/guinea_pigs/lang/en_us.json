@@ -4,8 +4,8 @@
 
   "entity.guinea_pigs.guinea_pig": "Guinea Pig",
 
-  "sounds.guinea_pigs.chutting": "The guinea pig is chutting",
-  "sounds.guinea_pigs.rumbling": "The guinea pig is rumbling",
-  "sounds.guinea_pigs.scream": "The guinea pig is screaming",
-  "sounds.guinea_pigs.wheek": "The guinea pig is wheeking"
+  "sounds.guinea_pigs.chutting": "Guinea pig chuts",
+  "sounds.guinea_pigs.rumbling": "Guinea pig rumbles",
+  "sounds.guinea_pigs.scream": "Guinea pig screams",
+  "sounds.guinea_pigs.wheek": "Guinea pig wheeks"
 }

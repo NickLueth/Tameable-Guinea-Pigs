@@ -2,12 +2,12 @@ package net.nitwit.guinea_pigs.world.gen;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.minecraft.entity.SpawnGroup;
-import net.minecraft.entity.SpawnLocationTypes;
-import net.minecraft.entity.SpawnRestriction;
-import net.minecraft.entity.passive.TameableEntity;
-import net.minecraft.world.Heightmap;
-import net.minecraft.world.biome.BiomeKeys;
+import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.nitwit.guinea_pigs.entity.ModEntities;
 
 public class ModEntitySpawns {
@@ -16,27 +16,27 @@ public class ModEntitySpawns {
         // Add Guinea Pig spawns to specified forest-like biomes with spawn weight and group sizes
         BiomeModifications.addSpawn(
                 BiomeSelectors.includeByKey(
-                        BiomeKeys.BIRCH_FOREST,
-                        BiomeKeys.FOREST,
-                        BiomeKeys.FLOWER_FOREST,
-                        BiomeKeys.DARK_FOREST,
-                        BiomeKeys.CHERRY_GROVE,
-                        BiomeKeys.TAIGA),
-                SpawnGroup.CREATURE,  // Spawn group (passive creatures)
-                ModEntities.GUINEA_PIG,  // The entity to spawn
-                8,  // Spawn weight (higher = more common)
-                2,   // Minimum group size
-                4    // Maximum group size
+                        Biomes.BIRCH_FOREST,
+                        Biomes.FOREST,
+                        Biomes.FLOWER_FOREST,
+                        Biomes.DARK_FOREST,
+                        Biomes.CHERRY_GROVE,
+                        Biomes.TAIGA),
+                MobCategory.CREATURE,
+                ModEntities.GUINEA_PIG,
+                8,
+                2,
+                4
         );
 
         // Register spawning restrictions for Guinea Pigs:
         // They spawn on the ground on blocks with heightmap MOTION_BLOCKING_NO_LEAVES,
-        // and use the natural spawn condition of tameable entities.
-        SpawnRestriction.register(
+        // and use the natural spawn condition of animals.
+        SpawnPlacements.register(
                 ModEntities.GUINEA_PIG,
-                SpawnLocationTypes.ON_GROUND,
-                Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-                TameableEntity::isValidNaturalSpawn
+                SpawnPlacementTypes.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Animal::checkAnimalSpawnRules
         );
     }
 }
