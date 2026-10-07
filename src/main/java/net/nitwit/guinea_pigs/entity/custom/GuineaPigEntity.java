@@ -140,9 +140,9 @@ public class GuineaPigEntity extends TameableEntity {
         return stack.isOf(Items.DANDELION);
     }
 
-    // Taming logic (33% chance on feeding favorite foods)
+    // Taming logic (20% chance on feeding favorite foods)
     private void tryTame(PlayerEntity player) {
-        if (this.random.nextInt(3) == 0) {
+        if (this.random.nextInt(5) == 0) {
             this.setOwner(player);
             this.navigation.stop();
             this.setTarget(null);
